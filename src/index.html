@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<title> LaTeX online editor and easy image extractor</title>
+	</head>
+	<body>
+		<a href="https://github.com/ar0ne/latex-equation-editor"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+		<div class='container'>
+			<div class="header">
+				<h1 class="text-muted"> LaTeX online editor and easy image extractor</h1>
+				<div id="error_container" class="row"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<textarea class="form-control" rows="6" id="equation_editor" style="resize: none; font-family:monospace;"></textarea>
+				</div>
+				<div class="col-md-6" id="img_container">Image will be here</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped table-hover" id="table_container">
+							<tr>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?a^b" alt="{ a }^{ b }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?a_b" alt="{ a }_{ b }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\frac{a}{b}" alt="\frac{ a }{ b }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\int" alt="\int"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\int_{a}^{b}" alt="\int_{ a }^{ b }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\prod" alt="\prod"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\bigcap" alt="\bigcap"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\left( a \right)" alt="\left( a \right)"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\left[ a \right]" alt="\left[ a \right]"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\oint_{a}^{b}" alt="\oint_{ a }^{ b }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\equiv" alt="\equiv"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\sum_{i=1}^{n}" alt="\sum_{ i = 1 }^{ n }"></td>
+							</tr>
+							<tr>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\alpha" alt="\alpha"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\beta" alt="\beta"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\gamma" alt="\gamma"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\delta" alt="\delta"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\epsilon" alt="\epsilon"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\varepsilon" alt="\varepsilon"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\zeta" alt="\zeta"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\eta" alt="\eta"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\theta" alt="\theta"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\vartheta" alt="\vartheta"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\iota" alt="\iota"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\log_{10}" alt="\log_{10}"></td>
+							</tr>
+							<tr>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\kappa" alt="\kappa"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\lambda" alt="\lambda"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\mu" alt="\mu"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\nu" alt="\nu"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\xi" alt="\xi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\pi" alt="\pi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\varpi" alt="\varpi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\rho" alt="\rho"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\varrho" alt="\varrho"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\sigma" alt="\sigma"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\varsigma" alt="\varsigma"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\lim_{x\rightarrow0}" alt="\lim_{x \rightarrow 0}"></td>
+							</tr>
+							<tr>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\tau" alt="\tau"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\upsilon" alt="\upsilon"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\phi" alt="\phi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\varphi" alt="\varphi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\chi" alt="\chi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\psi" alt="\psi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\omega" alt="\omega"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\varpi" alt="\varpi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Gamma" alt="\Gamma"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Delta" alt="\Delta"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Theta" alt="\Theta"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\begin{pmatrix}1&2\\4&5\end{pmatrix}" alt="\begin{pmatrix} 1 & 2 \\ 4 & 5 \end{pmatrix}"></td>
+							</tr>
+							<tr>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Lambda" alt="\Lambda"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Xi" alt="\Xi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Pi" alt="\Pi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Sigma" alt="\Sigma"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Upsilon" alt="\Upsilon"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Phi" alt="\Phi"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Omega" alt="\Omega"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\leq" alt="\leq"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\geq" alt="\geq"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\neq" alt="\neq"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\prec" alt="\prec"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\begin{matrix}1&2\\4&5\end{matrix}" alt="\begin{matrix} 1 & 2 \\ 4 & 5 \end{matrix}"></td>
+							</tr>
+							<tr>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\succ" alt="\succ"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\preceq" alt="\preceq"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\succeq" alt="\succeq"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\ll" alt="\ll"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\gg" alt="\gg"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\sim" alt="\sim"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\approx" alt="\approx"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\supset" alt="\supset"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\subset" alt="\subset"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\subseteq" alt="\subseteq"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\supseteq" alt="\supseteq"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\leftrightarrow" alt="\leftrightarrow"></td>
+							</tr>
+							<tr>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\simeq" alt="\simeq"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\sqsubset" alt="\sqsubset"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\sqsupset" alt="\sqsupset"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\sqsubseteq" alt="\sqsubseteq"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\sqsupseteq" alt="\sqsupseteq"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\asymp" alt="\asymp"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\in" alt="\in"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\ni" alt="\ni"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\propto" alt="\propto"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\vdash" alt="\vdash"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\dashv" alt="\dashv"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Leftrightarrow" alt="\Leftrightarrow"></td>
+							</tr>
+							<tr>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\hat{a}" alt="\hat{ a }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\dot{a}" alt="\dot{ a }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\check{a}" alt="\check{ a }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\ddot{a}" alt="\ddot{ a }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\tilde{a}" alt="\tilde{ a }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\breve{a}" alt="\breve{ a }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\acute{a}" alt="\acute{ a }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\bar{a}" alt="\bar{ a }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\grave{a}" alt="\grave{ a }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\vec{a}" alt="\vec{ a }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\overline{abc}" alt="\overline{ abc }"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\underbrace{1..4}_{n}" alt="\underbrace{ 1..4 }_{ n }"></td>
+							</tr>
+							<tr>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\mid" alt="\mid"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\perp" alt="\perp"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\parallel" alt="\parallel"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\leftarrow" alt="\leftarrow"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\rightarrow" alt="\rightarrow"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Leftarrow" alt="\Leftarrow"></td>
+								<td><img class="img-responsive" src="cgi-bin/mimetex.cgi?\Rightarrow" alt="\Rightarrow"></td>
+							</tr>
+						</table>
+					</div> 
+				</div>
+				<div class="col-md-6">
+					<form role="form" id="formForSaveImage">
+						<div class="form-group">
+						   <label for="nameOfImage">Image name:</label>
+						   <input type="text" class="form-control" id="nameOfImage" placeholder="image" name="name">
+						</div>
+						<button type="submit" class="btn btn-default">Save</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<!-- https://github.com/eligrey/FileSaver.js -->
+		<script type="text/javascript" src="js/FileSaver.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
+
